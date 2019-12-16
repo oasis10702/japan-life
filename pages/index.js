@@ -16,6 +16,7 @@ const Home = () => (
       <p className="description">
         To get started, edit <code>pages/index.js</code> and save to reload.
       </p>
+      <p className="description"> From 2019.12.16</p>
 
       <div className="row">
         <a href="https://nextjs.org/docs" className="card">
