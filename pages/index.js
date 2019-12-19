@@ -2,10 +2,12 @@ import React from 'react';
 import Head from 'next/head';
 import ReactFullpage from '@fullpage/react-fullpage';
 
+import HorizontalSection from '../components/HorizontalSection';
+
 const Home = () => (
   <ReactFullpage
     scrollingSpeed={1000}
-    render={({ fullpageApi }) => (
+    render={() => (
       <ReactFullpage.Wrapper>
         <Head>
           <title>Home</title>
@@ -13,12 +15,9 @@ const Home = () => (
         </Head>
         <div className="section">
           <p>Section 1 (welcome to fullpage.js)</p>
-          <button onClick={() => fullpageApi.moveSectionDown()}>
-            Click me to move down
-          </button>
         </div>
         <div className="section">
-          <p>Section 2</p>
+          <HorizontalSection />
         </div>
         <div className="section">
           <p>Section 3</p>
