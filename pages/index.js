@@ -9,11 +9,13 @@ const Home = () => (
       <ReactFullpage.Wrapper>
         <Head>
           <title>Home</title>
-          <link rel="icon" href="/favicon.ico" />
+          <link rel="icon" href="/cat.ico" />
         </Head>
         <div className="section">
           <p>Section 1 (welcome to fullpage.js)</p>
-          <button onClick={() => fullpageApi.moveSectionDown()}>Click me to move down</button>
+          <button onClick={() => fullpageApi.moveSectionDown()}>
+            Click me to move down
+          </button>
         </div>
         <div className="section">
           <p>Section 2</p>
