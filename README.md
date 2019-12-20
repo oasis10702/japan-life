@@ -2,4 +2,6 @@
 
 ### Record our life in Japan.
 
-#### Lincense by Kasumi & Hiroshi
+## Lincense
+
+### Copyright by Kasumi & Hiroshi
