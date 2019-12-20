@@ -1,0 +1,14 @@
+.nav {
+  position: absolute;
+  left: 50%;
+  bottom: 5%;
+  transform: translateX(-50%);
+  display: flex;
+  &__button {
+    margin-right: 4px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: black;
+  }
+}
