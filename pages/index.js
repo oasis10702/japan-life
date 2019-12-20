@@ -3,9 +3,10 @@ import ReactFullpage from '@fullpage/react-fullpage';
 
 import HorizontalSection from '../components/HorizontalSection';
 import Wrapper from '../components/Wrapper';
+import { PAGE_TITLE } from '../constants';
 
 const Home = () => (
-  <Wrapper>
+  <Wrapper title={PAGE_TITLE.HOME}>
     <ReactFullpage
       scrollingSpeed={1000}
       render={() => (
