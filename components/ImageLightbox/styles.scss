@@ -1,0 +1,38 @@
+.imageLightbox {
+  &__photo {
+    &::after {
+      content: '';
+      transition: all 0.5s ease;
+      box-sizing: border-box;
+      width: 100%;
+      height: 100%;
+      background-color: #000;
+      opacity: 0.2;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+  &__text {
+    &::after {
+      content: '';
+      transition: all 0.5s;
+      box-sizing: border-box;
+      width: 40%;
+      border: 2px solid white;
+      background-color: #fff;
+      z-index: 2;
+      opacity: 1;
+      position: absolute;
+      bottom: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  &:hover &__text::after {
+    width: 120%;
+  }
+  &:hover &__photo::after {
+    opacity: 0;
+  }
+}
