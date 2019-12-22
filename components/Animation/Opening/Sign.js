@@ -7,16 +7,19 @@ const Sign = props => {
   const { setStop } = props;
 
   useEffect(() => {
-    signAnimation('.line1', 2000);
-    signAnimation('.line2', 1000, 2000);
-    signAnimation('.line3', 2500, 3000);
+    anime.set('.sign', {
+      opacity: () => 1
+    });
+    signAnimation('.line1', 2000, 500);
+    signAnimation('.line2', 1000, 2500);
+    signAnimation('.line3', 2500, 3500);
   }, []);
 
   const signAnimation = (el, dur, delay = 0) => {
     anime({
       targets: el,
       strokeDashoffset: [anime.setDashoffset, 0],
-      easing: 'cubicBezier(.5, .05, .1, .3)',
+      easing: 'easeInOutSine',
       duration: dur,
       delay,
       update: anim => {
@@ -31,9 +34,11 @@ const Sign = props => {
 
   return (
     <svg
+      className="sign"
       style={{
         stroke: '#fff',
         strokeWidth: 10,
+        opacity: 0,
         fill: 'none',
         height: '100%',
         width: '100%'

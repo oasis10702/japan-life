@@ -13,6 +13,8 @@ const Opening = () => {
         display: stop ? 'none' : 'block',
         visibility: stop ? 'hidden' : 'visible',
         position: 'fixed',
+        left: 0,
+        top: 0,
         zIndex: 9999,
         backgroundColor: '#000'
       }}
