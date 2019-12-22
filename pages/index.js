@@ -4,6 +4,7 @@ import ReactFullpage from '@fullpage/react-fullpage';
 import HorizontalSection from '../components/HorizontalSection';
 import Wrapper from '../components/Wrapper';
 import Opening from '../components/Animation/Opening';
+import Hero from '../components/Hero';
 import { PAGE_TITLE } from '../constants';
 
 const Home = () => (
@@ -15,7 +16,7 @@ const Home = () => (
         render={() => (
           <ReactFullpage.Wrapper>
             <div className="section">
-              <p>Section 1 (welcome to fullpage.js)</p>
+              <Hero />
             </div>
             <div className="section">
               <HorizontalSection />

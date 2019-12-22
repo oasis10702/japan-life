@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Head from 'next/head';
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
 
 const Wrapper = ({ children, title }) => (
   <div>
@@ -8,6 +10,9 @@ const Wrapper = ({ children, title }) => (
       <title>{title}</title>
       <link rel="icon" href="/cat.ico" />
     </Head>
+    <AppBar position="fixed">
+      <Toolbar />
+    </AppBar>
     {children}
   </div>
 );
