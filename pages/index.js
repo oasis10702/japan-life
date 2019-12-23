@@ -13,6 +13,7 @@ const Home = () => (
     <Wrapper title={PAGE_TITLE.HOME}>
       <ReactFullpage
         scrollingSpeed={1000}
+        keyboardScrolling
         render={() => (
           <ReactFullpage.Wrapper>
             <div className="section">
