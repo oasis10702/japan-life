@@ -9,7 +9,7 @@ const HeaderBar = () => {
   const buttonStyles = { color: '#fff', marginRight: 16 };
 
   return (
-    <AppBar id="headerBar" style={{ backgroundColor: 'transparent' }}>
+    <AppBar id="headerBar" style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)' }}>
       <Toolbar
         style={{
           justifyContent: 'center'

@@ -1,5 +1,10 @@
-.hero {
-  position: relative;
+.hero,
+.hero2,
+.hero3,
+.hero4 {
+  position: absolute;
+  top: 0;
+  left: 0;
   &::after {
     content: '';
     position: absolute;

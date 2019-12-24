@@ -1,6 +1,5 @@
 import React from 'react';
 import times from 'lodash/times';
-import Typography from '@material-ui/core/Typography';
 import anime from 'animejs';
 
 import './styles.scss';
@@ -14,17 +13,17 @@ const StaggerVisualizer = () => {
         targets: '.staggerVisualizer div',
         easing: 'easeInOutSine',
         delay: anime.stagger(50),
-        loop: false,
+        loop: true,
         autoplay: false
       })
-      .add({
-        targets: '.staggerVisualizer',
-        translateY: [
-          { value: 300, duration: 2000, easing: 'easeOutBounce' },
-          { value: 0, duration: 1000, easing: 'easeInOutQuint' }
-        ],
-        scale: 3
-      })
+      // .add({
+      //   targets: '.staggerVisualizer',
+      //   // translateY: [
+      //   //   { value: 300, duration: 2000, easing: 'easeOutBounce' },
+      //   //   { value: 0, duration: 1000, easing: 'easeInOutQuint' }
+      //   // ],
+      //   scale: 2
+      // })
       .add({
         targets: '.staggerVisualizer div',
         translateX: [
@@ -65,8 +64,8 @@ const StaggerVisualizer = () => {
         delay: anime.stagger(100, { grid, from: 'center' })
       })
       .add({
-        translateX: () => anime.random(-10, 10),
-        translateY: () => anime.random(-10, 10),
+        translateX: () => anime.random(-15, 15),
+        translateY: () => anime.random(-15, 15),
         delay: anime.stagger(8, { from: 'last' })
       })
       .add({
@@ -76,12 +75,6 @@ const StaggerVisualizer = () => {
         borderRadius: '0%',
         background: '#fedfe1',
         delay: anime.stagger(100, { grid, from: 'center' })
-      })
-      .add({
-        targets: '.staggerVisualizer__text',
-        opacity: 1,
-        display: 'block',
-        duration: 1000
       });
 
     staggerVisualizer.play();
@@ -93,19 +86,6 @@ const StaggerVisualizer = () => {
         {times(grid[0] * grid[1], () => (
           <div />
         ))}
-        <Typography
-          style={{
-            position: 'absolute',
-            left: '50%',
-            top: '50%',
-            opacity: 0,
-            transform: 'translate(-50%, -50%)'
-          }}
-          variant="h4"
-          className="staggerVisualizer__text"
-        >
-          LETS TRAVEL
-        </Typography>
       </div>
     </>
   );
