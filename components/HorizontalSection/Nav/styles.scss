@@ -5,14 +5,14 @@
   transform: translateX(-50%);
   display: flex;
   &__button {
-    margin-right: 4px;
-    width: 16px;
-    height: 16px;
+    margin-right: 16px;
+    width: 8px;
+    height: 8px;
     border-radius: 50%;
-    background-color: black;
+    background-color: #fff;
     transition: 0.3s;
     &:hover {
-      background-color: #fff;
+      transform: scale(1.5);
     }
   }
 }

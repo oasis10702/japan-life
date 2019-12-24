@@ -18,30 +18,28 @@ import yokohamaImage from '../../assets/images/yokohama.jpg';
 import './styles.scss';
 
 const HorizontalSection = () => (
-  <div id="section2" className="section2">
+  <div id="horizontalSection" className="horizontalSection">
     <Nav />
-    <div className="section2__item">
+    <div className="horizontalSection__item">
       <ImageLightbox image={tokyoImage} title="TOKYO" />
       <ImageLightbox image={kobeImage} title="KOBE" />
       <ImageLightbox image={monjikoImage} title="MONJIKO" />
     </div>
-    <div className="section2__item">
+    <div className="horizontalSection__item">
       <ImageLightbox image={hakodateImage} title="HAKODATE" />
       <ImageLightbox image={fukuokaImage} title="FUKUOKA" />
       <ImageLightbox image={karuizawaImage} title="KARUIZAWA" />
     </div>
-    <div className="section2__item">
+    <div className="horizontalSection__item">
       <ImageLightbox image={kokuraImage} title="KOKURA" />
       <ImageLightbox image={kyotoImage} title="KYOTO" />
       <ImageLightbox image={sagaImage} title="SAGA" />
     </div>
-    <div className="section2__item">
+    <div className="horizontalSection__item">
       <ImageLightbox image={yuhuinImage} title="YUHUIN" />
       <ImageLightbox image={osakaImage} title="OSAKA" />
       <ImageLightbox image={yokohamaImage} title="YOKOHAMA" />
     </div>
-    <div className="section2__item">page 3</div>
-    <div className="section2__item">page 4</div>
   </div>
 );
 

@@ -1,4 +1,4 @@
-.section2 {
+.horizontalSection {
   height: 100%;
   overflow-x: scroll;
   width: auto;
@@ -6,6 +6,7 @@
   white-space: nowrap;
   display: flex;
   overflow-x: auto;
+  background-color: black;
   &__item {
     width: 100%;
     height: 100%;
