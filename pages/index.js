@@ -5,12 +5,14 @@ import HorizontalSection from '../components/HorizontalSection';
 import Wrapper from '../components/Wrapper';
 import Opening from '../components/Animation/Opening';
 import Hero from '../components/Hero';
+import About from '../components/About';
 import { PAGE_TITLE } from '../constants';
 
 const Home = () => {
-  const handleHeadBarBackgroundColor = (des) => {
+  const handleHeadBarBackgroundColor = des => {
     const headerBar = document.getElementById('headerBar');
-    headerBar.style.backgroundColor = des.index === 0 ? 'transparent' : 'rgba(0, 0, 0, 0.5)';
+    headerBar.style.backgroundColor =
+      des.index === 0 ? 'transparent' : 'rgba(0, 0, 0, 0.5)';
   };
 
   return (
@@ -27,10 +29,10 @@ const Home = () => {
                 <Hero />
               </div>
               <div className="section">
-                <HorizontalSection />
+                <About />
               </div>
               <div className="section">
-                <p>Section 3</p>
+                <HorizontalSection />
               </div>
               <div className="section">
                 <p>Section 4</p>

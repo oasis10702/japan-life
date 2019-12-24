@@ -18,29 +18,31 @@ import yokohamaImage from '../../assets/images/yokohama.jpg';
 import './styles.scss';
 
 const HorizontalSection = () => (
-  <div id="horizontalSection" className="horizontalSection">
-    <Nav />
-    <div className="horizontalSection__item">
-      <ImageLightbox image={tokyoImage} title="TOKYO" />
-      <ImageLightbox image={kobeImage} title="KOBE" />
-      <ImageLightbox image={monjikoImage} title="MONJIKO" />
+  <>
+    <div id="horizontalSection" className="horizontalSection">
+      <Nav />
+      <div className="horizontalSection__item">
+        <ImageLightbox image={tokyoImage} title="TOKYO" />
+        <ImageLightbox image={kobeImage} title="KOBE" />
+        <ImageLightbox image={monjikoImage} title="MONJIKO" />
+      </div>
+      <div className="horizontalSection__item">
+        <ImageLightbox image={hakodateImage} title="HAKODATE" />
+        <ImageLightbox image={fukuokaImage} title="FUKUOKA" />
+        <ImageLightbox image={karuizawaImage} title="KARUIZAWA" />
+      </div>
+      <div className="horizontalSection__item">
+        <ImageLightbox image={kokuraImage} title="KOKURA" />
+        <ImageLightbox image={kyotoImage} title="KYOTO" />
+        <ImageLightbox image={sagaImage} title="SAGA" />
+      </div>
+      <div className="horizontalSection__item">
+        <ImageLightbox image={yuhuinImage} title="YUHUIN" />
+        <ImageLightbox image={osakaImage} title="OSAKA" />
+        <ImageLightbox image={yokohamaImage} title="YOKOHAMA" />
+      </div>
     </div>
-    <div className="horizontalSection__item">
-      <ImageLightbox image={hakodateImage} title="HAKODATE" />
-      <ImageLightbox image={fukuokaImage} title="FUKUOKA" />
-      <ImageLightbox image={karuizawaImage} title="KARUIZAWA" />
-    </div>
-    <div className="horizontalSection__item">
-      <ImageLightbox image={kokuraImage} title="KOKURA" />
-      <ImageLightbox image={kyotoImage} title="KYOTO" />
-      <ImageLightbox image={sagaImage} title="SAGA" />
-    </div>
-    <div className="horizontalSection__item">
-      <ImageLightbox image={yuhuinImage} title="YUHUIN" />
-      <ImageLightbox image={osakaImage} title="OSAKA" />
-      <ImageLightbox image={yokohamaImage} title="YOKOHAMA" />
-    </div>
-  </div>
+  </>
 );
 
 export default HorizontalSection;

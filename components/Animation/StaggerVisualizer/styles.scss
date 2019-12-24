@@ -1,0 +1,16 @@
+.staggerVisualizer {
+  display: flex;
+  position: absolute;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  cursor: pointer;
+  & div {
+    width: 0.2rem;
+    height: 0.2rem;
+    box-sizing: border-box;
+    background-color: #fedfe1;
+  }
+}
