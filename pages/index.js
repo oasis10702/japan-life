@@ -15,7 +15,6 @@ const Home = () => (
       <ReactFullpage
         scrollingSpeed={1000}
         keyboardScrolling
-        // onLeave={(_, des) => handleHeadBarBackgroundColor(des)}
         render={() => (
           <ReactFullpage.Wrapper>
             <div className="section">
