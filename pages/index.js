@@ -10,7 +10,7 @@ import { PAGE_TITLE } from '../constants';
 
 const Home = () => (
   <>
-    <Opening />
+    {/* <Opening /> */}
     <Wrapper title={PAGE_TITLE.HOME}>
       <ReactFullpage
         scrollingSpeed={1000}
