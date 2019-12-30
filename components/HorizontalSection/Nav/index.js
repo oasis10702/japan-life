@@ -7,7 +7,7 @@ const Nav = () => {
   const [curPage, setCurPage] = useState(0);
 
   const handleScroll = page => {
-    const ele = document.getElementById('section2');
+    const ele = document.getElementById('horizontalSection');
     setCurPage(page);
     ele.scrollTo({
       left: window.innerWidth * page,
