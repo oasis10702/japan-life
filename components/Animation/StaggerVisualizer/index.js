@@ -16,14 +16,6 @@ const StaggerVisualizer = () => {
         loop: true,
         autoplay: false
       })
-      // .add({
-      //   targets: '.staggerVisualizer',
-      //   // translateY: [
-      //   //   { value: 300, duration: 2000, easing: 'easeOutBounce' },
-      //   //   { value: 0, duration: 1000, easing: 'easeInOutQuint' }
-      //   // ],
-      //   scale: 2
-      // })
       .add({
         targets: '.staggerVisualizer div',
         translateX: [
