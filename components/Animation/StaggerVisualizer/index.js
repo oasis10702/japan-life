@@ -73,13 +73,11 @@ const StaggerVisualizer = () => {
   };
 
   return (
-    <>
-      <div className="staggerVisualizer" onClick={handlePlayAnimation}>
-        {times(grid[0] * grid[1], () => (
-          <div />
-        ))}
-      </div>
-    </>
+    <div className="staggerVisualizer" onClick={handlePlayAnimation}>
+      {times(grid[0] * grid[1], () => (
+        <div />
+      ))}
+    </div>
   );
 };
 
