@@ -6,6 +6,7 @@ import './styles.scss';
 const Nav = () => {
   const [curPage, setCurPage] = useState(0);
 
+  // TODO: refactor by animes.js
   const handleScroll = page => {
     const ele = document.getElementById('horizontalSection');
     setCurPage(page);
