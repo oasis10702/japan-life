@@ -3,6 +3,7 @@
 ### Record our life in Japan.
 
 - Built by Next.JS
+- Animated CSS by anime.js
 
 ## Lincense
 
