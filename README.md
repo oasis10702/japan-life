@@ -4,7 +4,8 @@
 
 - Built by Next.JS
 - Animated CSS by anime.js
+-
 
 ## Lincense
 
-### Copyright by Kasumi & Hiroshi 2020
+### Copyright @ Kasumi & Hiroshi 2020
