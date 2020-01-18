@@ -4,7 +4,6 @@
 
 - Built by Next.JS
 - Animated CSS by anime.js
--
 
 ## Lincense
 
