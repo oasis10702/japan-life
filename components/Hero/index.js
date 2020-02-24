@@ -1,4 +1,5 @@
 import React from 'react';
+import shortid from 'shortid';
 
 import springImg from '../../assets/images/spring.jpg';
 import autumnImg from '../../assets/images/autumn.jpg';
@@ -12,6 +13,7 @@ const renderImage = img => (
     style={{
       backgroundImage: `url(${img})`
     }}
+    key={shortid.generate()}
   />
 );
 
