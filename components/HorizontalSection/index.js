@@ -19,6 +19,7 @@ import './styles.scss';
 
 const HorizontalSection = () => (
   <>
+    {/* TODO: update slider by anime.js */}
     <div id="horizontalSection" className="horizontalSection">
       <Nav />
       <div className="horizontalSection__item">
